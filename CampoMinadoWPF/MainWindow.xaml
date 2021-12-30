@@ -1,0 +1,220 @@
+﻿<Window x:Class="CampoMinadoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CampoMinadoWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="270" Background="#6959CD" MaxHeight="300" MinHeight="300" MaxWidth="270" MinWidth="250">
+    <Window.Resources>
+        <!--<Style x:Key="numForeground" TargetType="{x:Type TextBlock}">
+            <Style.Triggers>
+                <Trigger Property="Text" Value="1">
+                    <Setter Property="Foreground" Value="Blue"/>
+                </Trigger>
+                <Trigger Property="Text" Value="2">
+                    <Setter Property="Foreground" Value="ForestGreen"/>
+                </Trigger>
+                <Trigger Property="Text" Value="3">
+                    <Setter Property="Foreground" Value="Red"/>
+                </Trigger>
+                <Trigger Property="Focusable" Value="True">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </Trigger>
+            </Style.Triggers>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>-->
+        <Style x:Key="styleButton" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <Trigger Property="Content" Value="1">
+                    <Setter Property="Foreground" Value="Blue"/>
+                </Trigger>
+                <Trigger Property="Content" Value="2">
+                    <Setter Property="Foreground" Value="ForestGreen"/>
+                </Trigger>
+                <Trigger Property="Content" Value="3">
+                    <Setter Property="Foreground" Value="Red"/>
+                </Trigger>
+                <Trigger Property="Content" Value="4">
+                    <Setter Property="Foreground" Value="DarkBlue"/>
+                </Trigger>
+                <Trigger Property="Content" Value="*">
+                    <Setter Property="VerticalAlignment" Value="Bottom"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Trigger>
+                <Trigger Property="Content" Value="✓">
+                    <Setter Property="Foreground" Value="Green"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Trigger>
+                <Trigger Property="Content" Value="💣">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Background" Value="red"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                </Trigger>
+            </Style.Triggers>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Width" Value="26.1111111"/>
+            <Setter Property="Height" Value="22.2222222"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+
+        <Grid x:Name="grid2" Width="235" Height="200" VerticalAlignment="Bottom" Margin="0,8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--Linhas verticais-->
+
+            <Line Grid.Column="1" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="1" />
+            <Line Grid.Column="2" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="0.5" />
+            <Line Grid.Column="3" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="0.5" />
+            <Line Grid.Column="4" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="0.5" />
+            <Line Grid.Column="5" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="0.5" />
+            <Line Grid.Column="6" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="0.5" />
+            <Line Grid.Column="7" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="0.5" />
+            <Line Grid.Column="8" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="0.5" />
+            <Line Grid.Column="9" Grid.Row="0" Grid.RowSpan="9" X1="0" Y1="200" Stroke="Black" StrokeThickness="0.5" />
+
+            <!--Linhas horizontais-->
+
+            <Line Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+            <Line Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+            <Line Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+            <Line Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+            <Line Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+            <Line Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+            <Line Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+            <Line Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+            <Line Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="9" X1="250" Y1="0" Stroke="Black" StrokeThickness="1"/>
+
+            <Image x:Name="imgBomba" Source="C:\Users\vlnote15\Desktop\Guilherme\CampoMinadoWPF\CampoMinadoWPF\bomba.png" />
+
+
+            <!--Botões linha 1-->
+            <Button x:Name="btn0" Grid.Column="0" Grid.Row="0" Click="click00"  Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn1" Grid.Column="1" Click="click00"  Style="{StaticResource ResourceKey=styleButton}" />
+            <Button x:Name="btn2" Grid.Column="2" Grid.Row="0" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn3" Grid.Column="3" Grid.Row="0" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn4" Grid.Column="4" Grid.Row="0" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn5" Grid.Column="5" Grid.Row="0" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn6" Grid.Column="6" Grid.Row="0" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn7" Grid.Column="7" Grid.Row="0" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn8" Grid.Column="8" Grid.Row="0" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <!--Botões linha 2-->
+            <Button x:Name="btn9" Grid.Column="0" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn10" Grid.Column="1" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn11" Grid.Column="2" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn12" Grid.Column="3" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn13" Grid.Column="4" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn14" Grid.Column="5" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn15" Grid.Column="6" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn16" Grid.Column="7" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn17" Grid.Column="8" Grid.Row="1" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <!--Botões linha 3-->
+            <Button x:Name="btn18" Grid.Column="0" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn19" Grid.Column="1" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn20" Grid.Column="2" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn21" Grid.Column="3" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn22" Grid.Column="4" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn23" Grid.Column="5" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn24" Grid.Column="6" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn25" Grid.Column="7" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn26" Grid.Column="8" Grid.Row="2" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <!--Botões linha 4-->
+            <Button x:Name="btn27" Grid.Column="0" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn28" Grid.Column="1" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn29" Grid.Column="2" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn30" Grid.Column="3" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn31" Grid.Column="4" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn32" Grid.Column="5" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn33" Grid.Column="6" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn34" Grid.Column="7" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn35" Grid.Column="8" Grid.Row="3" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <!--Botões linha 5-->
+            <Button x:Name="btn36" Grid.Column="0" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn37" Grid.Column="1" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn38" Grid.Column="2" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn39" Grid.Column="3" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn40" Grid.Column="4" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn41" Grid.Column="5" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn42" Grid.Column="6" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn43" Grid.Column="7" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn44" Grid.Column="8" Grid.Row="4" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <!--Botões linha 6-->
+            <Button x:Name="btn45" Grid.Column="0" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn46" Grid.Column="1" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn47" Grid.Column="2" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn48" Grid.Column="3" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn49" Grid.Column="4" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn50" Grid.Column="5" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn51" Grid.Column="6" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn52" Grid.Column="7" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn53" Grid.Column="8" Grid.Row="5" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <!--Botões linha 7-->
+            <Button x:Name="btn54" Grid.Column="0" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn55" Grid.Column="1" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn56" Grid.Column="2" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn57" Grid.Column="3" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn58" Grid.Column="4" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn59" Grid.Column="5" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn60" Grid.Column="6" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn61" Grid.Column="7" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn62" Grid.Column="8" Grid.Row="6" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <!--Botões linha 8-->
+            <Button x:Name="btn63" Grid.Column="0" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn64" Grid.Column="1" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn65" Grid.Column="2" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn66" Grid.Column="3" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn67" Grid.Column="4" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn68" Grid.Column="5" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn69" Grid.Column="6" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn70" Grid.Column="7" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn71" Grid.Column="8" Grid.Row="7" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <!--Botões linha 9-->
+            <Button x:Name="btn72" Grid.Column="0" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn73" Grid.Column="1" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn74" Grid.Column="2" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn75" Grid.Column="3" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn76" Grid.Column="4" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn77" Grid.Column="5" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn78" Grid.Column="6" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn79" Grid.Column="7" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+            <Button x:Name="btn80" Grid.Column="8" Grid.Row="8" Click="click00" Style="{StaticResource ResourceKey=styleButton}"/>
+        </Grid>
+        <TextBlock x:Name="ttbMoviments" Text="00" Background="#1C1C1C" Width="70" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10" Padding="2" Foreground="Red" FontFamily="GreekC" FontSize="25"/>
+        <TextBlock x:Name="ttbTimer" Text="000" Background="#1C1C1C" Width="70" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Padding="2" Foreground="Red" FontFamily="GreekC" FontSize="25"/>
+
+        <Button x:Name="btnReset" Grid.Column="0" Grid.Row="0" Click="clickReset" Width="40" Height="40" VerticalAlignment="Top" Margin="10" Background="#6959CD" BorderBrush="#6959CD">
+            <Image x:Name="imgReset" Source="C:\Users\vlnote15\Desktop\Guilherme\CampoMinadoWPF\botao.png" Width="39" Height="38" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Fill"/>
+        </Button>
+
+    </Grid>
+</Window>
